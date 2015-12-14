@@ -1,6 +1,6 @@
 {
-  "name": "Polymer Starter Kit",
-  "short_name": "Polymer Starter Kit",
+  "name": "GDG New Delhi",
+  "short_name": "GDG ND",
   "icons": [{
         "src": "images/touch/icon-128x128.png",
         "sizes": "128x128",
@@ -23,6 +23,6 @@
         "type": "image/png"
       }],
   "background_color": "#3E4EB8",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#2E3AA1"
 }

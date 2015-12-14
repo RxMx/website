@@ -301,6 +301,14 @@ gulp.task('default', ['clean'], function(cb) {
 });
 
 // Build then deploy to GitHub pages gh-pages branch
+gulp.task('deploy', function(cb) {
+  runSequence(
+    'default',
+    'deploy-gh-pages',
+    cb);
+});
+
+// Build then deploy to GitHub pages gh-pages branch
 gulp.task('build-deploy-gh-pages', function(cb) {
   runSequence(
     'default',
