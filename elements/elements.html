@@ -17543,6 +17543,105 @@ module.exports = Array.isArray || function (arr) {
     */
   });
 </script>
+<dom-module id="gdg-info" assetpath="gdg-info/">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      :host {
+        display: block;
+      }
+
+      #cards {
+        @apply(--layout-vertical);
+        @apply(--center-justified);
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      paper-card {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    </style>
+    <paper-card>
+      <div class="card-content">
+        <p class="paper-font-body2">
+          </p><h2 class="page-title">Google Developer Group - New Delhi</h2> formerly known as the New Delhi Google Technology User Group(GTUG) provides a network for people who are interested in Google's open source technologies and also love the spirit of sharing in the field
+          of technology.
+        <p></p>
+        <p class="paper-font-body2">
+          <b>We Are Inclusive, Not Exclusive </b>
+          </p><ul>
+            <li>Diverse membership</li>
+            <li>Various Skill and Experience</li>
+            <li>Positive and Fun Environment about Learning</li>
+            <li>Sharing and Development</li>
+            <li>New Learning Experience</li>
+          </ul>
+        <p></p>
+        <p class="paper-font-body2">
+          <b>Events organized</b>
+          </p><ul>
+            <li>Hackathons</li>
+            <li>Talks</li>
+            <li>Communal Projects</li>
+            <li>Demo Days</li>
+            <li>Design Sprints</li>
+            <li>Un-Conference</li>
+            <li>Code Jams</li>
+          </ul>
+        <p></p>
+        <p class="paper-font-body2">
+          A place for developers to express their enthusiasm, questions or concerns, ideas and opinions.
+        </p>
+        <p class="paper-font-body2">
+          Various Google Developer Technologies like Google’s Android Mobile Operating System, App Engine, Google Web Toolkit apart from several Google APIs Like Earth API, YouTube API, Maps API are discussed.
+        </p>
+        <p class="paper-font-body2">
+          We had the following sub-chapters in the city
+          </p><ul>
+            <li>GDG Lingaya's University</li>
+            <li>GDG Delhi Technological University</li>
+            <li>GDG Galgotias University</li>
+            <li>GDG JMI</li>
+            <li>GDG USICT</li>
+            <li>GDG MAIT</li>
+            <li>GDG MSIT</li>
+            <li>GDG Dronacharya College Of Engineering</li>
+            <li>GDG CBS</li>
+          </ul>
+        <p></p>
+      </div>
+    </paper-card>
+    <paper-card>
+      <div class="card-content">
+        <p class="paper-font-body2">
+          <i>"Disclaimer: GDG New Delhi is an independent group; our activities and the opinions expressed on this website should in no way be linked to Google, the corporation."</i>
+        </p>
+      </div>
+    </paper-card>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'gdg-info',
+
+        properties: {
+          greeting: {
+            type: String,
+            value: 'Welcome!',
+            notify: true
+          }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
 <dom-module id="gdg-contact" assetpath="gdg-contact/">
   <template>
     <style include="shared-styles"></style>
@@ -17573,25 +17672,25 @@ module.exports = Array.isArray || function (arr) {
         <p class="paper-font-body"> If you would like to contribute in our open source projects, feel free to fork our projects on GitHub.</p>
       </div>
       <div class="card-actions">
-        <a href="https://plus.google.com/114576537688641864561">
+        <a href="https://plus.google.com/114576537688641864561" target="_blank">
           <paper-button title="Google Plus">Google Plus
         </paper-button></a>
-        <a href="https://www.facebook.com/gdgnewdelhi/">
+        <a href="https://www.facebook.com/gdgnewdelhi/" target="_blank">
           <paper-button title="Facebook">Facebook
         </paper-button></a>
-        <a href="https://twitter.com/gdg_nd">
+        <a href="https://twitter.com/gdg_nd" target="_blank">
           <paper-button title="Twitter">Twitter
         </paper-button></a>
-        <a href="https://gdgnd.slack.com">
+        <a href="https://gdgnd.slack.com" target="_blank">
           <paper-button title="Slack">Slack
         </paper-button></a>
-        <a href="https://github.com/gdgnd">
+        <a href="https://github.com/gdgnd" target="_blank">
           <paper-button title="GitHub">GitHub
         </paper-button></a>
-        <a href="https://developers.google.com/groups/chapter/114576537688641864561/">
+        <a href="https://developers.google.com/groups/chapter/114576537688641864561/" target="_blank">
           <paper-button title="Google Devs">Google Developers
         </paper-button></a>
-        <a href="https://gdgnd.github.io">
+        <a href="https://gdgnd.github.io" target="_blank">
           <paper-button title="Landing Page">Welcome Site
         </paper-button></a>
       </div>
@@ -17613,6 +17712,135 @@ module.exports = Array.isArray || function (arr) {
             notify: true
           }
         }
+      });
+    })();
+  </script>
+
+</dom-module>
+<dom-module id="gdg-event" assetpath="gdg-event/">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      :host {
+        display: block;
+      }
+
+      .avatar {
+        display: inline-block;
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        background: var(--paper-pink-500);
+        color: white;
+        line-height: 64px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      #cards {
+        @apply(--layout-vertical);
+        @apply(--center-justified);
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      paper-card {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+
+      .fancy .title {
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        color: var(--paper-indigo-500);
+      }
+
+      .fancy img {
+        width: 100%;
+      }
+
+      .fancy .big {
+        font-size: 22px;
+        padding: 8px 0 16px;
+        color: var(--google-grey-500);
+      }
+
+      .fancy .medium {
+        font-size: 16px;
+        padding-bottom: 8px;
+      }
+    </style>
+
+    <template is="dom-repeat" items="{{events}}">
+      <paper-card class="fancy">
+        <div class="card-content">
+          <div class="avatar">{{item.avatar}}</div>
+          <div class="title">
+            <div class="medium">{{item.title}}</div>
+            <div class="small">{{item.subtitle}}</div>
+          </div>
+        </div>
+
+        <img src="{{item.img}}">
+
+        <div class="card-content">
+          <div class="big">{{item.content.headline}}</div>
+          <div class="medium">{{item.content.details}}</div>
+          <div class="small">{{item.content.schedule}}</div>
+        </div>
+
+        <div class="card-actions">
+          <a href="{{item.rsvp.url}}" target="_blank">
+            <paper-button>{{item.rsvp.text}}</paper-button>
+          </a>
+
+          <template is="dom-repeat" tags="{{item.tags}}">
+            <a href="{{tag.url}}" target="_blank">
+              <paper-button>{{tag.text}}</paper-button>
+            </a>
+          </template>
+        </div>
+      </paper-card>
+    </template>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'gdg-event',
+
+        properties: {
+          events: {
+            type: Array,
+            notify: true
+          }
+        },
+        ready: function() {
+          this.events = [{
+            avatar: 'G1',
+            title: 'Title',
+            subtitle: 'subtitle',
+            img: 'http://placehold.it/350x150',
+            content: {
+              headline: 'Usu eu novum principes, vel quodsi aliquip ea.',
+              details: 'Usu eu novum principes, vel quodsi aliquip ea.',
+              schedule: 'Usu eu novum principes, vel quodsi aliquip ea.'
+            },
+            rsvp: {
+              text: 'Join us!',
+              url: 'https://google.com'
+            },
+            tags: [{
+              text: 'google',
+              url: 'https://google.com'
+            }]
+          }];
+        }
+
       });
     })();
   </script>
