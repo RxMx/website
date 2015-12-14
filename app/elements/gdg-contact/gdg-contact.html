@@ -1,0 +1,73 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+<dom-module id="gdg-contact">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      :host {
+        display: block;
+      }
+
+      #cards {
+        @apply(--layout-vertical);
+        @apply(--center-justified);
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      paper-card {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    </style>
+
+    <paper-card>
+      <div class="card-content">
+        <p class="paper-font-body">
+          Connect with us on your favorite social media platform like G+, Fb and twitter to stay in sync with our activities. You can also join us for conversations in our Slack group.
+        </p>
+        <p class="paper-font-body"> If you would like to contribute in our open source projects, feel free to fork our projects on GitHub.</p>
+      </div>
+      <div class="card-actions">
+        <a href="facebook">
+          <paper-button title="Google Plus">Google Plus</paper-icon-button>
+        </a>
+        <a href="facebook">
+          <paper-button title="Facebook">Facebook</paper-icon-button>
+        </a>
+        <a href="facebook">
+          <paper-button title="Twitter">Twitter</paper-icon-button>
+        </a>
+        <a href="facebook">
+          <paper-button title="Facebook">Slack</paper-icon-button>
+        </a>
+        <a href="facebook">
+          <paper-button title="Facebook">GitHub</paper-icon-button>
+        </a>
+      </div>
+    </paper-card>
+
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'gdg-contact',
+
+        properties: {
+          greeting: {
+            type: String,
+            value: 'Welcome!',
+            notify: true
+          }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
