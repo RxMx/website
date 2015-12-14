@@ -16990,78 +16990,7 @@ module.exports = Array.isArray || function (arr) {
     </style>
   </template>
 </dom-module>
-<dom-module id="my-greeting" assetpath="my-greeting/">
-  <template>
-    <style include="shared-styles"></style>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2 class="page-title">{{greeting}}</h2>
-    <span class="paper-font-body2">Update text to change the greeting.</span>
-    
-    <input class="paper-font-body2" value="{{greeting::input}}">
-  </template>
-
-  <script>
-    (function() {
-      'use strict';
-      
-      Polymer({
-        is: 'my-greeting',
-
-        properties: {
-          greeting: {
-            type: String,
-            value: 'Welcome!',
-            notify: true
-          }
-        }
-      });
-    })();
-  </script>
-
-</dom-module><dom-module id="my-list" assetpath="my-list/">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <ul>
-      <template is="dom-repeat" items="{{items}}">
-        <li><span class="paper-font-body1">{{item}}</span></li>
-      </template>
-    </ul>
-  </template>
-
-  <script>
-    (function() {
-      'use strict';
-  
-      Polymer({
-        is: 'my-list',
-        properties: {
-          items: {
-            type: Array,
-            notify: true,
-          }
-        },
-        ready: function() {
-          this.items = [
-            'Responsive Web App boilerplate',
-            'Iron Elements and Paper Elements',
-            'End-to-end Build Tooling (including Vulcanize)',
-            'Unit testing with Web Component Tester',
-            'Routing with Page.js',
-            'Offline support with the Platinum Service Worker Elements'
-          ];
-        }
-      });
-    })();
-  </script>
-</dom-module><dom-module id="iron-image" assetpath="../bower_components/iron-image/">
+<dom-module id="iron-image" assetpath="../bower_components/iron-image/">
 
   <style>
 
