@@ -1,0 +1,79 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+<dom-module id="gdg-contact">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      :host {
+        display: block;
+      }
+
+      #cards {
+        @apply(--layout-vertical);
+        @apply(--center-justified);
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      paper-card {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    </style>
+
+    <paper-card>
+      <div class="card-content">
+        <p class="paper-font-body">
+          Connect with us on your favorite social media platform like G+, Fb and twitter to stay in sync with our activities. You can also join us for conversations in our Slack group.
+        </p>
+        <p class="paper-font-body"> If you would like to contribute in our open source projects, feel free to fork our projects on GitHub.</p>
+      </div>
+      <div class="card-actions">
+        <a href="https://plus.google.com/114576537688641864561" target="_blank">
+          <paper-button title="Google Plus">Google Plus</paper-icon-button>
+        </a>
+        <a href="https://www.facebook.com/gdgnewdelhi/" target="_blank">
+          <paper-button title="Facebook">Facebook</paper-icon-button>
+        </a>
+        <a href="https://twitter.com/gdg_nd" target="_blank">
+          <paper-button title="Twitter">Twitter</paper-icon-button>
+        </a>
+        <a href="https://gdgnd.slack.com" target="_blank">
+          <paper-button title="Slack">Slack</paper-icon-button>
+        </a>
+        <a href="https://github.com/gdgnd" target="_blank">
+          <paper-button title="GitHub">GitHub</paper-icon-button>
+        </a>
+        <a href="https://developers.google.com/groups/chapter/114576537688641864561/" target="_blank">
+          <paper-button title="Google Devs">Google Developers</paper-icon-button>
+        </a>
+        <a href="https://gdgnd.github.io" target="_blank">
+          <paper-button title="Landing Page">Welcome Site</paper-icon-button>
+        </a>
+      </div>
+    </paper-card>
+
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'gdg-contact',
+
+        properties: {
+          greeting: {
+            type: String,
+            value: 'Welcome!',
+            notify: true
+          }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
